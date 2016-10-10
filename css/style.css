@@ -1,0 +1,333 @@
+@font-face {
+    font-family: "Aleo";
+    src: url('../fonts/aleo-bold-webfont.eot');
+    src: url('../fonts/aleo-bold-webfont.eot?#iefix') format('embedded-opentype'), 
+    	url('../fonts/aleo-bold-webfont.woff') format('woff'), 
+    	url('../fonts/aleo-bold-webfont.woff2') format('woff2'),
+    	url('../fonts/aleo-bold-webfont.ttf') format('truetype'),
+    	url('../fonts/aleo-bold-webfont.svg') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Aleo";
+    src: url('../fonts/aleo-lightitalic-webfont.eot');
+    src: url('../fonts/aleo-lightitalic-webfont.eot?#iefix') format('embedded-opentype'),
+    	url('../fonts/aleo-lightitalic-webfont.woff') format('woff'),
+    	url('../fonts/aleo-lightitalic-webfont.woff2') format('woff2'),
+    	url('../fonts/aleo-lightitalic-webfont.ttf') format('truetype'),
+    	url('../fonts/aleo-lightitalic-webfont.svg') format('svg');
+    font-weight: lighter;
+    font-style: italic;
+}
+@font-face {
+    font-family: "Aleo";
+    src: url('../fonts/aleo-light-webfont.eot');
+    src: url('../fonts/aleo-light-webfont.eot?#iefix') format('embedded-opentype'), 
+    	url('../fonts/aleo-light-webfont.woff') format('woff'), 
+    	url('../fonts/aleo-light-webfont.woff2') format('woff2'), 
+    	url('../fonts/aleo-light-webfont.ttf') format('truetype'), 
+    	url('../fonts/aleo-light-webfont.svg') format('svg');
+    font-weight: 100;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Aleo";
+    src: url('../fonts/aleo-regular-webfont.eot');
+    src: url('../fonts/aleo-regular-webfont.eot?#iefix') format('embedded-opentype'),
+    	url('../fonts/aleo-regular-webfont.woff') format('woff'), 
+    	url('../fonts/aleo-regular-webfont.woff2') format('woff2'), 
+    	url('../fonts/aleo-regular-webfont.ttf') format('truetype'), 
+    	url('../fonts/aleo-regular-webfont.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'wc_mano_negra_btaregular';
+    src: url('../fonts/WCManoNegraBta-webfont.eot');
+    src: url('../fonts/WCManoNegraBta-webfont.eot?#iefix') format('embedded-opentype'),
+    	url('../fonts/WCManoNegraBta-webfont.woff') format('woff'), 
+    	url('../fonts/WCManoNegraBta-webfont.ttf') format('truetype'), 
+    	url('../fonts/WCManoNegraBta-webfont.svg#wc_mano_negra_btaregular') format('svg');
+}
+body {
+    font-family: "Aleo";
+}
+.clear {
+    clear: both;
+}
+header {
+    line-height: 90px;
+}
+header nav {
+    text-align: right;
+}
+header nav ul li {
+    display: inline;
+    margin-left: 50px;
+}
+header nav ul li a {
+    color: #3b3b3b;
+    -webkit-transition: 0.1s;
+    -moz-transition: 0.1s;
+    -o-transition: 0.1s;
+    transition: 0.1s;
+}
+header nav ul li a:hover {
+    border-bottom: 2px solid #f34949;
+    text-decoration: none;
+    color: #f34949;
+}
+h3.part-title {
+    display: inline-block;
+    margin: 0 0 90px 0;
+    font-weight: bold;
+    font-size: 22px;
+    text-transform: uppercase;
+}
+h3.part-title::after {
+    display: inline-block;
+    width: 200px;
+    height: 1px;
+    margin: 8px 20px;
+    content: " ";
+    background: #e5e3e3;
+    clear: both;
+}
+.slider {
+    height: 570px;
+    padding-top: 200px;
+    background: url("../img/slider/slide-1.jpg") no-repeat center;
+    background-size: cover;
+    border-bottom: solid 4px #f34949;
+    text-align: center;
+    color: #fff;
+    font-size: 20px;
+}
+.slider .slider-header {
+    font-family: 'wc_mano_negra_btaregular';
+    font-size: 100px;
+}
+.slider .slider-text {
+    font-size: 16px;
+}
+.slider .slider-text::before {
+    content: " ";
+    width: 40px;
+    height: 1px;
+    background: #fff;
+    display: inline-block;
+    margin: 5px 25px;
+}
+.slider .slider-text::after {
+    content: " ";
+    width: 40px;
+    height: 1px;
+    background: #fff;
+    display: inline-block;
+    margin: 5px 25px;
+}
+.menu-header {
+    margin: 0 auto;
+    width: 155px;
+    height: 70px;
+    background: url("../img/menu-header-background.png") no-repeat top center;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 70px;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 20px;
+}
+.menu ul {
+    padding: 0;
+}
+.menu ul li {
+    display: block;
+    width: 100%;
+    margin-bottom: 60px;
+    position: relative;
+}
+.menu .menu-item {
+    display: block;
+    float: left;
+    width: 100%;
+}
+.menu .menu-item .title {
+    display: inline-block;
+    float: left;
+    color: #555555;
+    font-size: 16px;
+    background: #fff;
+    padding-right: 20px;
+}
+.menu .menu-price {
+    display: inline-block;
+    color: #555555;
+    font-size: 16px;
+    float: right;
+    background: #fff;
+    padding-left: 20px;
+}
+.menu .separator {
+    border-bottom: solid 1px #e3e1e1;
+    display: block;
+    position: absolute;
+    top: 12px;
+    z-index: -1;
+    width: 100%;
+}
+.menu p {
+    color: #b7b7b7;
+    font-size: 12px;
+    font-weight: lighter;
+    font-style: italic;
+}
+.menu .menu-load-more {
+    margin-top: 48px;
+    text-align: center;
+}
+.menu .menu-load-more a {
+    color: #b7b7b7;
+    border: 1px solid #b7b7b7;
+    display: inline-block;
+    margin: 0 auto;
+    padding: 10px 15px;
+    text-decoration: none;
+    -webkit-transition: 0.1s;
+    -moz-transition: 0.1s;
+    -o-transition: 0.1s;
+    transition: 0.1s;
+}
+.menu .menu-load-more a:hover {
+    color: #9b9b9b;
+    border: 1px solid #9b9b9b;
+}
+.menu .menu-load-more span {
+    font-size: 10px;
+}
+.featured {
+    font-size: 16px;
+    margin-top: 200px;
+}
+.featured img {
+    text-align: center;
+    width: 100%;
+}
+.featured .featured-title {
+    margin-top: 30px;
+    display: inline-block;
+    float: left;
+    font-weight: 100;
+}
+.featured .featured-price {
+    display: inline-block;
+    float: right;
+    margin-top: 30px;
+    font-weight: 100;
+}
+.featured .rating {
+    margin-top: 15px;
+    clear: both;
+    font-size: 11px;
+}
+.featured .rating span {
+    color: #f1df1a;
+}
+.featured .rating span.not-star {
+    color: #dedede;
+}
+.gallery {
+    margin-top: 200px;
+}
+.gallery-block {
+    width: 33.33333%;
+    float: left;
+    overflow: hidden;
+}
+.gallery-block img {
+    width: 100%;
+    -webkit-transition: all 1s ease-out;
+    -moz-transition: all 1s ease-out;
+    -o-transition: all 1s ease-out;
+    transition: all 1s ease-out;
+}
+.gallery-block img:hover {
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    transform: scale(1.1);
+}
+footer {
+    margin-top: 200px;
+    padding: 74px 0;
+    background: #3b3b3b;
+    line-height: 30px;
+    font-size: 16px;
+    font-weight: bold;
+    font-style: normal;
+    color: #fff;
+}
+footer a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    -webkit-transition: 0.1s;
+    -moz-transition: 0.1s;
+    -o-transition: 0.1s;
+    transition: 0.1s;
+}
+footer a:hover {
+    text-decoration: none;
+    color: #f34949;
+}
+footer img {
+    margin-bottom: 30px;
+}
+footer nav ul {
+    list-style: none;
+    padding: 0;
+}
+footer nav ul li {
+    line-height: 40px;
+}
+footer .lighter-font-weight {
+    font-weight: 100;
+}
+@media (max-width: 768px) {
+    header nav ul {
+        padding: 0;
+    }
+    header nav ul li {
+        display: block;
+        margin-left: 0;
+        text-align: left;
+        line-height: 20px;
+    }
+    header nav ul li:hover {
+        background: #dedede;
+    }
+    header nav ul li a {
+        display: block;
+        padding: 10px;
+    }
+    header nav ul li a:hover {
+        border: 0;
+    }
+    h3.part-title::after {
+        content: none;
+    }
+    .slider .slider-header {
+        font-size: 50px;
+    }
+    .slider .slider-text::before {
+        content: none;
+    }
+    .slider .slider-text::after {
+        content: none;
+    }
+    .gallery-block {
+        width: 50%;
+    }
+}
